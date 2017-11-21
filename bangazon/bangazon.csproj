@@ -236,10 +236,24 @@
     <Compile Include="Migrations\201711181652409_initialMigration.Designer.cs">
       <DependentUpon>201711181652409_initialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711210139425_buildingTables.cs" />
+    <Compile Include="Migrations\201711210139425_buildingTables.Designer.cs">
+      <DependentUpon>201711210139425_buildingTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711210152379_buildingTablesAgain.cs" />
+    <Compile Include="Migrations\201711210152379_buildingTablesAgain.Designer.cs">
+      <DependentUpon>201711210152379_buildingTablesAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\LineItem.cs" />
+    <Compile Include="Models\PaymentType.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -335,6 +349,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711181652409_initialMigration.resx">
       <DependentUpon>201711181652409_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711210139425_buildingTables.resx">
+      <DependentUpon>201711210139425_buildingTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711210152379_buildingTablesAgain.resx">
+      <DependentUpon>201711210152379_buildingTablesAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
