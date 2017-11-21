@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System.Data.Entity;
 
 namespace bangazon.Models
 {
@@ -23,11 +24,21 @@ namespace bangazon.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        
         public ApplicationDbContext()
             : base("BangazonTables", throwIfV1Schema: false)
         {
+
         }
-        
+
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
+        public virtual DbSet<Invoice> Invoice { get; set; }
+        public virtual DbSet<Cart> Cart { get; set; }
+        public virtual DbSet<LineItem> LineItem { get; set; }
+        public virtual DbSet<PaymentType> PaymentType { get; set; }
+
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
