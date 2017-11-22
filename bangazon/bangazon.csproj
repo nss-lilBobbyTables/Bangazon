@@ -250,6 +250,7 @@
     <Content Include="app\appConfig.js" />
     <Content Include="app\controllers\homeController.js" />
     <Content Include="app\controllers\loginController.js" />
+    <Content Include="app\views\home.html" />
     <Content Include="app\views\login.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />

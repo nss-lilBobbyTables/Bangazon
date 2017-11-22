@@ -3,6 +3,7 @@
     $scope.password = "";
 
     $scope.login = function () {
+        console.log("click working");
         $scope.error = "";
         $scope.inProgress = true;
         $http({
