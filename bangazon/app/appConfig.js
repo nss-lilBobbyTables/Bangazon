@@ -2,7 +2,7 @@
     $routeProvider
         .when("/",
         {
-            templateUrl: "/app/views/home/home.html",
+            templateUrl: "/app/views/home.html",
             controller: "homeController"
         })
         .when("/login",
